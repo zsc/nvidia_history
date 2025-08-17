@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="./">
+    <title>NVIDIA 技术发展史</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/highlight.css">
+    <script src="assets/script.js" defer></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: false,
+                packages: {'[+]': ['noerrors', 'ams']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            loader: {
+                load: ['[tex]/noerrors', '[tex]/ams']
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h3>目录</h3>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="sidebar-search-input" placeholder="搜索..." autocomplete="off">
+            </div>
+            <div id="tree-container">
+                <nav class="tree-nav" role="tree">
+                    <div class="tree-item active" >
+                        <a href="index.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">NVIDIA 技术发展史</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter1.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第1章：创世纪 (1993-1999)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter2.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第2章：可编程时代 (2000-2005)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter3.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第3章：统一架构革命 (2006-2009)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter4.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第4章：并行计算成熟期 (2010-2015)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter5.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第5章：AI 加速时代 (2016-2020)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter6.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第6章：大模型纪元 (2021-2024)</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter7.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第7章：GPU 架构演进</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter8.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第8章：CUDA 生态系统</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter9.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第9章：AI 加速技术栈</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter10.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第10章：图形渲染革新</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter11.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第11章：数据中心产品线</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="chapter12.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">第12章：软件框架与生态</span>
+                        </a>
+                    </div>
+                
+                    <div class="tree-item " >
+                        <a href="CLAUDE.html" class="tree-link">
+                            <span class="tree-icon">📄</span>
+                            <span class="tree-title">Untitled</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        
+        <main class="content">
+            <article>
+                <h1 id="nvidia">NVIDIA 技术发展史</h1>
+<blockquote>
+<p>从图形加速到人工智能计算的三十年征程</p>
+</blockquote>
+<h2 id="_1">目录结构</h2>
+<h3 id="_2">第一部分：编年史</h3>
+<h4 id="1-1993-1999"><a href="chapter1.html">第1章：创世纪 (1993-1999)</a></h4>
+<ul>
+<li><strong>创始故事</strong>：黄仁勋、Chris Malachowsky、Curtis Priem在Denny's餐厅创立NVIDIA</li>
+<li><strong>NV1失败教训</strong>：1995年四边形渲染的技术赌博，与世嘉合作失败，差点破产</li>
+<li><strong>RIVA 128逆转</strong>：1997年4个月开发周期，击败3dfx Voodoo，月销百万片</li>
+<li><strong>GeForce 256诞生</strong>：1999年定义GPU概念，硬件T&amp;L革命</li>
+<li><strong>关键人物</strong>：David Kirk加入担任首席科学家，奠定技术基础</li>
+<li><strong>IPO上市</strong>：1999年纳斯达克上市，募资4200万美元</li>
+</ul>
+<h4 id="2-2000-2005"><a href="chapter2.html">第2章：可编程时代 (2000-2005)</a></h4>
+<ul>
+<li><strong>GeForce 3革命</strong>：2001年可编程着色器，nfiniteFX引擎</li>
+<li><strong>Xbox合作</strong>：2001年为微软Xbox提供GPU，进入主机市场</li>
+<li><strong>收购3dfx</strong>：2000年获得关键专利和SLI技术，清除主要对手</li>
+<li><strong>CineFX架构</strong>：2003年GeForce FX系列，32位浮点精度</li>
+<li><strong>SLI技术复活</strong>：2004年重新推出多GPU并行技术</li>
+<li><strong>竞争格局</strong>：与ATI Radeon激烈竞争，技术路线分歧</li>
+</ul>
+<h4 id="3-2006-2009"><a href="chapter3.html">第3章：统一架构革命 (2006-2009)</a></h4>
+<ul>
+<li><strong>CUDA诞生</strong>：2006年Ian Buck主导，C语言扩展，通用计算革命</li>
+<li><strong>David Kirk贡献</strong>：推动GPU从图形专用到通用计算平台转型</li>
+<li><strong>Tesla架构G80</strong>：2008年统一着色器，128个CUDA核心</li>
+<li><strong>Fermi架构</strong>：2010年首个计算专用设计，ECC内存，双精度浮点</li>
+<li><strong>退出芯片组</strong>：2007年战略决策，放弃与Intel/AMD竞争</li>
+<li><strong>CUDA生态初建</strong>：科学计算、石油勘探早期应用</li>
+</ul>
+<h4 id="4-2010-2015"><a href="chapter4.html">第4章：并行计算成熟期 (2010-2015)</a></h4>
+<ul>
+<li><strong>Kepler突破</strong>：2012年动态并行，能效提升3倍</li>
+<li><strong>GTC大会创立</strong>：2012年建立GPU技术大会，构建开发者社区</li>
+<li><strong>AlexNet事件</strong>：2012年ImageNet竞赛，证明GPU深度学习优势</li>
+<li><strong>Maxwell优化</strong>：2014年架构大改，能效比提升2倍</li>
+<li><strong>与吴恩达合作</strong>：2014年斯坦福/百度项目，推广深度学习</li>
+<li><strong>Bill Dally加入</strong>：2009年斯坦福教授出任首席科学家</li>
+<li><strong>ARM授权获得</strong>：2011年布局移动计算市场</li>
+</ul>
+<h4 id="5ai-2016-2020"><a href="chapter5.html">第5章：AI 加速时代 (2016-2020)</a></h4>
+<ul>
+<li><strong>Pascal架构</strong>：2016年HBM2高带宽内存，NVLink互连</li>
+<li><strong>DGX-1发布</strong>：2016年首个AI超级计算机，售价12.9万美元</li>
+<li><strong>Volta革命</strong>：2017年Tensor Core引入，640个张量核心</li>
+<li><strong>Jonah Alben领导</strong>：主导Volta到Ampere架构设计</li>
+<li><strong>Turing光追</strong>：2018年RT Core实时光线追踪，DLSS技术</li>
+<li><strong>收购Mellanox</strong>：2019年69亿美元，强化数据中心网络</li>
+<li><strong>Ampere发布</strong>：2020年第三代Tensor Core，稀疏计算</li>
+<li><strong>Bryan Catanzaro贡献</strong>：cuDNN深度学习库架构</li>
+</ul>
+<h4 id="6-2021-2024"><a href="chapter6.html">第6章：大模型纪元 (2021-2024)</a></h4>
+<ul>
+<li><strong>Hopper架构</strong>：2022年Transformer Engine，DPX动态编程指令</li>
+<li><strong>ChatGPT爆发</strong>：2022年H100成为大模型训练标配，一卡难求</li>
+<li><strong>收购ARM失败</strong>：2020年400亿美元收购被监管阻止</li>
+<li><strong>Grace CPU</strong>：2023年ARM架构服务器CPU，超级芯片战略</li>
+<li><strong>市值破万亿</strong>：2023年成为首家万亿美元市值芯片公司</li>
+<li><strong>Blackwell发布</strong>：2024年2080亿晶体管，第二代Transformer引擎</li>
+<li><strong>黄仁勋远见</strong>：提前布局AI，"加速计算"理念成为现实</li>
+</ul>
+<h3 id="_3">第二部分：专题深度分析</h3>
+<h4 id="7gpu"><a href="chapter7.html">第7章：GPU 架构演进</a></h4>
+<ul>
+<li>SM (Streaming Multiprocessor) 演化史</li>
+<li>内存架构革新</li>
+<li>互连技术发展（NVLink、NVSwitch）</li>
+</ul>
+<h4 id="8cuda"><a href="chapter8.html">第8章：CUDA 生态系统</a></h4>
+<ul>
+<li>CUDA 编程模型演进</li>
+<li>核心库发展（cuBLAS、cuDNN、cuSPARSE）</li>
+<li>编译器与工具链</li>
+</ul>
+<h4 id="9ai"><a href="chapter9.html">第9章：AI 加速技术栈</a></h4>
+<ul>
+<li>Tensor Core 架构详解</li>
+<li>混合精度训练</li>
+<li>稀疏化与量化技术</li>
+</ul>
+<h4 id="10"><a href="chapter10.html">第10章：图形渲染革新</a></h4>
+<ul>
+<li>光栅化到光线追踪</li>
+<li>DLSS 技术演进</li>
+<li>虚拟几何与 Nanite 类技术</li>
+</ul>
+<h4 id="11"><a href="chapter11.html">第11章：数据中心产品线</a></h4>
+<ul>
+<li>DGX 系统演进</li>
+<li>HGX 平台架构</li>
+<li>SuperPOD 与大规模集群</li>
+</ul>
+<h4 id="12"><a href="chapter12.html">第12章：软件框架与生态</a></h4>
+<ul>
+<li>TensorRT 推理优化</li>
+<li>RAPIDS 数据科学加速</li>
+<li>Omniverse 平台</li>
+</ul>
+<h2 id="_4">技术里程碑时间轴</h2>
+<div class="codehilite"><pre><span></span><code><span class="mf">1993</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">NVIDIA</span><span class="w"> </span><span class="n">成立</span><span class="w"> </span><span class="p">(</span><span class="n">黄仁勋等三人</span><span class="err">，</span><span class="n">初始资金4万美元</span><span class="p">)</span>
+<span class="mf">1995</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">NV1</span><span class="w"> </span><span class="p">(</span><span class="n">失败但有教育意义</span><span class="err">，</span><span class="n">四边形渲染</span><span class="p">)</span>
+<span class="mf">1997</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">RIVA</span><span class="w"> </span><span class="mf">128</span><span class="w"> </span><span class="p">(</span><span class="mf">3</span><span class="n">D</span><span class="w"> </span><span class="n">加速</span><span class="err">，</span><span class="n">月销百万片</span><span class="p">)</span>
+<span class="mf">1999</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">GeForce</span><span class="w"> </span><span class="mf">256</span><span class="w"> </span><span class="p">(</span><span class="n">GPU</span><span class="w"> </span><span class="n">概念诞生</span><span class="err">，</span><span class="n">硬件T</span><span class="err">&amp;</span><span class="n">L</span><span class="p">)</span>
+<span class="mf">2001</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">GeForce</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="p">(</span><span class="n">可编程着色器</span><span class="err">，</span><span class="n">nfiniteFX引擎</span><span class="p">)</span>
+<span class="mf">2006</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">CUDA</span><span class="w"> </span><span class="n">发布</span><span class="w"> </span><span class="p">(</span><span class="n">通用计算革命</span><span class="err">，</span><span class="n">C语言扩展</span><span class="p">)</span>
+<span class="mf">2008</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Tesla</span><span class="w"> </span><span class="n">架构</span><span class="w"> </span><span class="p">(</span><span class="n">统一着色器</span><span class="err">，</span><span class="n">GT200</span><span class="p">)</span>
+<span class="mf">2010</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Fermi</span><span class="w"> </span><span class="p">(</span><span class="n">计算专用设计</span><span class="err">，</span><span class="n">ECC内存</span><span class="p">)</span>
+<span class="mf">2012</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Kepler</span><span class="w"> </span><span class="p">(</span><span class="n">能效突破</span><span class="err">，</span><span class="n">动态并行</span><span class="p">)</span>
+<span class="mf">2014</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Maxwell</span><span class="w"> </span><span class="p">(</span><span class="n">架构优化</span><span class="err">，</span><span class="mf">2</span><span class="n">倍能效比</span><span class="p">)</span>
+<span class="mf">2016</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Pascal</span><span class="w"> </span><span class="p">(</span><span class="n">深度学习加速</span><span class="err">，</span><span class="n">NVLink</span><span class="p">)</span>
+<span class="mf">2017</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Volta</span><span class="w"> </span><span class="p">(</span><span class="n">Tensor</span><span class="w"> </span><span class="n">Core</span><span class="err">，</span><span class="mf">640</span><span class="n">个张量核心</span><span class="p">)</span>
+<span class="mf">2018</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Turing</span><span class="w"> </span><span class="p">(</span><span class="n">RT</span><span class="w"> </span><span class="n">Core</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">光追</span><span class="err">，</span><span class="n">DLSS</span><span class="p">)</span>
+<span class="mf">2020</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Ampere</span><span class="w"> </span><span class="p">(</span><span class="n">第三代</span><span class="w"> </span><span class="n">Tensor</span><span class="w"> </span><span class="n">Core</span><span class="err">，</span><span class="n">稀疏计算</span><span class="p">)</span>
+<span class="mf">2022</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Hopper</span><span class="w"> </span><span class="p">(</span><span class="n">Transformer</span><span class="w"> </span><span class="n">Engine</span><span class="err">，</span><span class="n">DPX指令</span><span class="p">)</span>
+<span class="mf">2024</span><span class="w"> </span><span class="err">├──</span><span class="w"> </span><span class="n">Blackwell</span><span class="w"> </span><span class="p">(</span><span class="n">第五代</span><span class="w"> </span><span class="n">Tensor</span><span class="w"> </span><span class="n">Core</span><span class="err">，</span><span class="n">FP4精度</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="_5">核心技术对比</h2>
+<p>| 架构代号 | 年份 | 制程 | 晶体管数 | CUDA核心 | 关键创新 |</p>
+<table>
+<thead>
+<tr>
+<th>架构代号</th>
+<th>年份</th>
+<th>制程</th>
+<th>晶体管数</th>
+<th>CUDA核心</th>
+<th>关键创新</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tesla</td>
+<td>2006</td>
+<td>90nm</td>
+<td>6.8亿</td>
+<td>128</td>
+<td>统一着色器</td>
+</tr>
+<tr>
+<td>Fermi</td>
+<td>2010</td>
+<td>40nm</td>
+<td>30亿</td>
+<td>512</td>
+<td>双精度计算</td>
+</tr>
+<tr>
+<td>Kepler</td>
+<td>2012</td>
+<td>28nm</td>
+<td>71亿</td>
+<td>2880</td>
+<td>动态并行</td>
+</tr>
+<tr>
+<td>Maxwell</td>
+<td>2014</td>
+<td>28nm</td>
+<td>52亿</td>
+<td>2048</td>
+<td>能效优化</td>
+</tr>
+<tr>
+<td>Pascal</td>
+<td>2016</td>
+<td>16nm</td>
+<td>150亿</td>
+<td>3840</td>
+<td>HBM2内存</td>
+</tr>
+<tr>
+<td>Volta</td>
+<td>2017</td>
+<td>12nm</td>
+<td>211亿</td>
+<td>5120</td>
+<td>Tensor Core</td>
+</tr>
+<tr>
+<td>Turing</td>
+<td>2018</td>
+<td>12nm</td>
+<td>186亿</td>
+<td>4608</td>
+<td>RT Core</td>
+</tr>
+<tr>
+<td>Ampere</td>
+<td>2020</td>
+<td>7nm</td>
+<td>542亿</td>
+<td>10752</td>
+<td>稀疏计算</td>
+</tr>
+<tr>
+<td>Hopper</td>
+<td>2022</td>
+<td>4nm</td>
+<td>800亿</td>
+<td>16896</td>
+<td>Transformer引擎</td>
+</tr>
+<tr>
+<td>Blackwell</td>
+<td>2024</td>
+<td>4nm</td>
+<td>2080亿</td>
+<td>20480</td>
+<td>第二代Transformer引擎</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">竞争格局演变</h2>
+<h3 id="1995-2006">图形时代对手 (1995-2006)</h3>
+<ul>
+<li><strong>3dfx</strong> (1995-2000)：Voodoo系列霸主，被NVIDIA收购</li>
+<li><strong>ATI</strong> (1985-2006)：Radeon系列，2006年被AMD收购</li>
+<li><strong>S3 Graphics</strong>：Savage系列，逐渐边缘化</li>
+<li><strong>Matrox</strong>：专业图形市场，退守小众领域</li>
+</ul>
+<h3 id="2006-2020">计算时代竞争 (2006-2020)</h3>
+<ul>
+<li><strong>AMD</strong> (2006-至今)：收购ATI后的主要对手，RDNA架构</li>
+<li><strong>Intel</strong> (2010-至今)：Xeon Phi失败，Arc独显重新入局</li>
+<li><strong>Google TPU</strong> (2015-至今)：专用AI芯片，云端竞争</li>
+<li><strong>华为昇腾</strong> (2018-至今)：中国市场本土化方案</li>
+</ul>
+<h3 id="ai-2020-2024">AI时代新势力 (2020-2024)</h3>
+<ul>
+<li><strong>AMD MI300X</strong> (2023)：HBM3内存，挑战H100</li>
+<li><strong>Intel Gaudi3</strong> (2024)：Habana Labs技术，企业市场</li>
+<li><strong>Google TPU v5</strong> (2023)：专注训练优化</li>
+<li><strong>Amazon Trainium</strong> (2022)：云原生AI训练</li>
+<li><strong>特斯拉Dojo</strong> (2023)：自动驾驶专用</li>
+</ul>
+<h2 id="_7">商业模式演进</h2>
+<div class="codehilite"><pre><span></span><code>游戏显卡时代 (1999-2010)
+├── GeForce 产品线
+├── Quadro 专业卡
+└── 授权费收入
+
+数据中心转型 (2010-2020)
+├── Tesla 计算卡
+├── DGX 系统销售
+├── CUDA 生态锁定
+└── 云服务商合作
+
+AI平台垄断 (2020-至今)
+├── H100/H200 供不应求
+├── 软件订阅服务
+├── Omniverse 云平台
+├── DGX Cloud 服务
+└── 主权AI方案
+</code></pre></div>
+
+<h2 id="_8">阅读指南</h2>
+<ul>
+<li><strong>硬件工程师</strong>：重点阅读第7章（架构演进）和第11章（数据中心产品）</li>
+<li><strong>软件开发者</strong>：关注第8章（CUDA）和第12章（软件框架）</li>
+<li><strong>AI研究者</strong>：聚焦第9章（AI加速）和第5-6章（近期发展）</li>
+<li><strong>图形开发者</strong>：参考第10章（图形渲染）和早期章节</li>
+<li><strong>商业分析师</strong>：关注关键事件与商业模式演进部分</li>
+</ul>
+<h2 id="_9">技术架构简图</h2>
+<div class="codehilite"><pre><span></span><code>┌─────────────────────────────────────────────────┐
+│                  应用层                          │
+│  游戏引擎 | AI框架 | 科学计算 | 数据分析          │
+├─────────────────────────────────────────────────┤
+│                 软件栈                           │
+│  CUDA Runtime | cuDNN | TensorRT | OptiX        │
+├─────────────────────────────────────────────────┤
+│                 驱动层                           │
+│          NVIDIA Driver | CUDA Driver            │
+├─────────────────────────────────────────────────┤
+│                硬件架构                          │
+│   SM阵列 | Tensor Core | RT Core | 内存子系统    │
+└─────────────────────────────────────────────────┘
+</code></pre></div>
+
+<hr />
+<p><em>本文档持续更新中，最后修订：2024年</em></p>
+            </article>
+            
+            <nav class="page-nav"><a href="chapter1.html" class="nav-link next">第1章：创世纪 (1993-1999) →</a></nav>
+        </main>
+    </div>
+</body>
+</html>
